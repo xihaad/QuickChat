@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mylabel" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ClientPart.Controllerlogin">
+    <children>
+        <Label layoutX="155.0" layoutY="42.0" text="QUICKCHAT" textFill="DARKSLATEBLUE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtusername" layoutX="130.0" layoutY="115.0" prefHeight="26.0" prefWidth="150.0" promptText="User Name"
+                   onKeyReleased="#loghandlekey"/>
+        <PasswordField fx:id="txtpassword" layoutX="130.0" layoutY="165.0" prefHeight="26.0" prefWidth="150.0" promptText="Password"
+                       onKeyReleased="#loghandlekey"/>
+        <Button disable="true" fx:id="loginbtn" layoutX="130.0" layoutY="220.0" mnemonicParsing="false" onAction="#LoginCheck" style="-fx-background-color: #483D8B;" text="Log In" textFill="WHITE" />
+        <Button layoutX="350.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToSignup" style="-fx-background-color: #483D8B;" text="Sign Up" textFill="#fcf7f7" />
+        <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="88.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Photo/login2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="88.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Photo/pass2.jpeg" />
+            </image>
+        </ImageView>
+        <Label fx:id="mylabel1" layoutX="101.0" layoutY="307.0" prefHeight="26.0" prefWidth="257.0" textFill="#e80b0b" />
+
+
+
+
+    </children>
+</AnchorPane>

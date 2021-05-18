@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerPart.ControllerSignUp">
+   <children>
+       <Label layoutX="108.0" layoutY="38.0" prefHeight="62.0" prefWidth="235.0" text="WELCOME TO SIGNUP" textFill="DARKSLATEBLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtname" layoutX="130.0" layoutY="115.0" promptText="Name" onKeyReleased="#signuphandlekey"/>
+      <TextField fx:id="txtusername1" layoutX="130.0" layoutY="165.0" promptText="User Name" onKeyReleased="#signuphandlekey" />
+      <PasswordField fx:id="txtpassword1" layoutX="130.0" layoutY="215.0" promptText="Password" onKeyReleased="#signuphandlekey" />
+      <PasswordField fx:id="txtretypepassword1" layoutX="130.0" layoutY="265.0" promptText="Retype Password" onKeyReleased="#signuphandlekey"/>
+       <Button fx:id="signupbtn" layoutX="130.0" layoutY="315.0" mnemonicParsing="false" onAction="#SignupCheck" style="-fx-background-color: #483D8B;" text="Sign Up" textFill="WHITE" disable="true" />
+       <Button layoutX="350.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #483D8B;" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="77.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photo/name-icon-png-4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="77.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photo/login2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="77.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photo/pass2.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="77.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photo/pass2.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="mylabel2" layoutX="130.0" layoutY="362.0" prefHeight="26.0" prefWidth="171.0" textFill="#cd0000" />
+
+   </children>
+</AnchorPane>

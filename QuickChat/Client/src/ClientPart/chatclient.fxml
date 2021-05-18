@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ClientPart.Controllerchat">
+    <children>
+        <Label layoutX="155.0" layoutY="30.0" text="QUICKCHAT" textFill="DARKSLATEBLUE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="370.0" layoutY="322.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #483D8B;" text="LogOut" textFill="WHITE" />
+        <Button fx:id="sendButton" disable="true" layoutX="313.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #483D8B;" text="Send" textFill="WHITE" />
+        <TextField fx:id="mesgField" layoutX="42.0" layoutY="322.0" prefHeight="26.0" prefWidth="265.0"  onKeyReleased="#loghandlekey"
+                   promptText="Type Message" />
+        <TextArea fx:id="mesgArea" layoutX="42.0" layoutY="56.0" prefHeight="263.0" prefWidth="322.0" />
+        <Label layoutX="203.0" layoutY="360.0" prefHeight="26.0" prefWidth="225.0" text="Server is Waiting" textFill="DARKSLATEBLUE" />
+    </children>
+</AnchorPane>
